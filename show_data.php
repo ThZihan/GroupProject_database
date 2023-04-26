@@ -149,7 +149,7 @@ if (!$conn) {
 
 $sql = "SELECT * FROM std_data ORDER BY Date DESC";
 
-$result = mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql);//will return row number
 
 if (mysqli_num_rows($result) > 0) {
    
@@ -168,7 +168,7 @@ if (mysqli_num_rows($result) > 0) {
     echo "</tr>";
 
 
-    while ($row = mysqli_fetch_assoc($result)) {
+    while ($row = mysqli_fetch_assoc($result)) {//will fetch rows from result set
         echo "<tr>";
         echo "<td>" . $row['ID'] . "</td>";
         echo "<td>" . $row['Year'] . "</td>";

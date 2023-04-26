@@ -76,7 +76,7 @@ if(isset($_POST['add_csv'])){
 
     $sqlInsert5 = "INSERT INTO std_data(ID,Year,Semester,Course,Section,Grade,CO1,CO2,CO3,Date) VALUES ('" . $column[0] . "','" . $column[1] . "','" . $column[2] . "','" . $column[3] . "','" . $column[4] . "','" . $column[5] . "'," . $marks . "," . $marks . "," . $marks . ",NOW())";
 
-$result5 = mysqli_query($conn, $sqlInsert5);
+    $result5 = mysqli_query($conn, $sqlInsert5);
 
 
     if (!empty($result1)) {
